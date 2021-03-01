@@ -9,9 +9,9 @@ import rkpImg from "../images/rkp.png";
 import walletImg from "../images/Ewallet.png";
 import inventoryImg from "../images/Inventory.png";
 import copicoImg from "../images/copico.png";
-import rocketairImg from "../images/Rocket-Air.png"
-import crickboard from '../images/crickboard.png';
-import blackImg from '../images/npm.jpeg'
+import rocketairImg from "../images/Rocket-Air.png";
+import crickboard from "../images/crickboard.png";
+import blackImg from "../images/npm.jpeg";
 import * as VanillaTilt from "vanilla-tilt";
 import cursorDot from "cursor-dot";
 
@@ -37,40 +37,56 @@ class Works extends React.Component {
         <br />
         <br />
         <br />
-        <h1 className="heading-1 text-center mt-md-2 mb-md-3 mt-sm-1">My Projects</h1>
+        <h1 className="heading-1 text-center mt-md-2 mb-md-3 mt-sm-1">
+          My Projects
+        </h1>
         <div className="container mb-5">
-        <div class="card-deck">
+          <div class="card-deck">
             <div class="card">
-              <img src={blackImg} class="card-img-top" style={{height:'250px'}} alt="Samvid 2019" />
+              <img
+                src={blackImg}
+                class="card-img-top"
+                style={{ height: "250px" }}
+                alt="Samvid 2019"
+              />
               {/* <center><h1>OPEN SOURCE PROJECTS</h1></center> */}
               <div className="contentBx">
                 <h2 className="contentBx-heading">OPEN SOURCE PROJECTS</h2>
                 <h4 className="contentBx-description">
-                I have made React packages and also have contributed to <a href="https://github.com/anandgupta193/react-enterprise-starter-kit">React Started kit.</a>
+                  I have made React packages and also have contributed to{" "}
+                  <a href="https://github.com/anandgupta193/react-enterprise-starter-kit">
+                    React Started kit.
+                  </a>
                 </h4>
-                <a className="project-link" target="__blank" href="https://www.npmjs.com/settings/shubham_17/packages">
-                <button className="view-btn btn btn-block btn-outline-light">
-                  View
-                </button>
+                <a
+                  className="project-link"
+                  target="__blank"
+                  href="https://www.npmjs.com/settings/shubham_17/packages"
+                >
+                  <button className="view-btn btn btn-block btn-outline-light">
+                    View
+                  </button>
                 </a>
               </div>
             </div>
           </div>
           <div class="card-deck">
-          <div class="card">
+            <div class="card">
               <img src={crickboard} class="card-img-top" alt="Crickboard" />
               <div className="contentBx">
-                <h2 className="contentBx-heading">
-                  CrickBoard
-                </h2>
+                <h2 className="contentBx-heading">CrickBoard</h2>
                 <p className="contentBx-description">
                   An Online cricket score tracking app
                   <br />
                 </p>
-                <a className="project-link" target="__blank" href="https://crickboard.herokuapp.com/">
-                <button className="view-btn btn btn-block btn-outline-light">
-                  View
-                </button>
+                <a
+                  className="project-link"
+                  target="__blank"
+                  href="https://crickboard.herokuapp.com/"
+                >
+                  <button className="view-btn btn btn-block btn-outline-light">
+                    View
+                  </button>
                 </a>
               </div>
             </div>
@@ -85,10 +101,14 @@ class Works extends React.Component {
                   States in India and daily news and Updates about COVID-19.
                   <br />
                 </p>
-                <a className="project-link" target="__blank" href="http://covid19.shubhamsweb.in">
-                <button className="view-btn btn btn-block btn-outline-light">
-                  View
-                </button>
+                <a
+                  className="project-link"
+                  target="__blank"
+                  href="http://covid19.shubhamsweb.in"
+                >
+                  <button className="view-btn btn btn-block btn-outline-light">
+                    View
+                  </button>
                 </a>
               </div>
             </div>
@@ -103,10 +123,14 @@ class Works extends React.Component {
                   with all the rules.
                   <br />
                 </p>
-                <a className="project-link" target="__blank" href="http://sudoku.shubhamsweb.in">
-                <button className="view-btn btn btn-block btn-outline-light">
-                  View
-                </button>
+                <a
+                  className="project-link"
+                  target="__blank"
+                  href="http://sudoku.shubhamsweb.in"
+                >
+                  <button className="view-btn btn btn-block btn-outline-light">
+                    View
+                  </button>
                 </a>
               </div>
             </div>
@@ -120,10 +144,14 @@ class Works extends React.Component {
                   SAMVID is an Techno-Cultural Fest of Shri Shankharacharya
                   Group of Instutuions.
                 </p>
-                <a className="project-link" target="__blank" href="https://shubhamsweb.github.io/MaachateRaho/">
-                <button className="view-btn btn btn-block btn-outline-light">
-                  View
-                </button>
+                <a
+                  className="project-link"
+                  target="__blank"
+                  href="https://shubhamsweb.github.io/MaachateRaho/"
+                >
+                  <button className="view-btn btn btn-block btn-outline-light">
+                    View
+                  </button>
                 </a>
               </div>
             </div>
@@ -134,13 +162,18 @@ class Works extends React.Component {
               <div className="contentBx">
                 <h2 className="contentBx-heading">E-Wallet</h2>
                 <p className="contentBx-description">
-                  Online Virtual money transfer system to send and recieve money. 
+                  Online Virtual money transfer system to send and recieve
+                  money.
                   <br />
                 </p>
-                <a className="project-link" target="__blank" href="http://wallet.shubhamsweb.in">
-                <button className="view-btn btn btn-block btn-outline-light">
-                  View
-                </button>
+                <a
+                  className="project-link"
+                  target="__blank"
+                  href="http://wallet.shubhamsweb.in"
+                >
+                  <button className="view-btn btn btn-block btn-outline-light">
+                    View
+                  </button>
                 </a>
               </div>
             </div>
@@ -159,10 +192,14 @@ class Works extends React.Component {
                   Ordering,Purchasing,Warehousing etc.
                   <br />
                 </p>
-                <a className="project-link" target="__blank" href="http://inventory.shubhamsweb.in">
-                <button className="view-btn btn btn-block btn-outline-light">
-                  View
-                </button>
+                <a
+                  className="project-link"
+                  target="__blank"
+                  href="http://inventory.shubhamsweb.in"
+                >
+                  <button className="view-btn btn btn-block btn-outline-light">
+                    View
+                  </button>
                 </a>
               </div>
             </div>
@@ -173,34 +210,37 @@ class Works extends React.Component {
               <div className="contentBx">
                 <h2 className="contentBx-heading">Movie Rating App</h2>
                 <p className="contentBx-description">
-                  App which shows all detailes of the searched movie with IMDB rating.
+                  App which shows all detailes of the searched movie with IMDB
+                  rating.
                   <br />
                 </p>
-                <a className="project-link" target="__blank" href="https://shubhamsweb.github.io/Movieapp/">
-                <button className="view-btn btn btn-block btn-outline-light">
-                  View
-                </button>
+                <a
+                  className="project-link"
+                  target="__blank"
+                  href="https://shubhamsweb.github.io/Movieapp/"
+                >
+                  <button className="view-btn btn btn-block btn-outline-light">
+                    View
+                  </button>
                 </a>
               </div>
             </div>
             <div class="card">
-              <img
-                src={copicoImg}
-                class="card-img-top"
-                alt="Copico Systems"
-              />
+              <img src={copicoImg} class="card-img-top" alt="Copico Systems" />
               <div className="contentBx">
-                <h2 className="contentBx-heading">
-                  Copico Systems
-                </h2>
+                <h2 className="contentBx-heading">Copico Systems</h2>
                 <p className="contentBx-description">
                   Designed a Website for the computer firm.
                   <br />
                 </p>
-                <a className="project-link" target="__blank" href="https://shubhamsweb.github.io/">
-                <button className="view-btn btn btn-block btn-outline-light">
-                  View
-                </button>
+                <a
+                  className="project-link"
+                  target="__blank"
+                  href="https://shubhamsweb.github.io/"
+                >
+                  <button className="view-btn btn btn-block btn-outline-light">
+                    View
+                  </button>
                 </a>
               </div>
             </div>
@@ -209,30 +249,30 @@ class Works extends React.Component {
             <div class="card">
               <img src={samvidImg} class="card-img-top" alt="Samvid 2019" />
               <div className="contentBx">
-                <h2 className="contentBx-heading">SAMVID 2019(Official Website)</h2>
+                <h2 className="contentBx-heading">
+                  SAMVID 2019(Official Website)
+                </h2>
                 <p className="contentBx-description">
-                SAMVID is an Techno-Cultural Fest of Shri Shankharacharya
+                  SAMVID is an Techno-Cultural Fest of Shri Shankharacharya
                   Group of Instutuions.
                 </p>
-                <a className="project-link" target="__blank" href="https://shubhamsweb.github.io/SAMVID19/">
-                <button className="view-btn btn btn-block btn-outline-light">
-                  View
-                </button>
+                <a
+                  className="project-link"
+                  target="__blank"
+                  href="https://shubhamsweb.github.io/SAMVID19/"
+                >
+                  <button className="view-btn btn btn-block btn-outline-light">
+                    View
+                  </button>
                 </a>
               </div>
             </div>
             <div class="card">
-              <img
-                src={rocketairImg}
-                class="card-img-top"
-                alt="Rocket-Air"
-              />
+              <img src={rocketairImg} class="card-img-top" alt="Rocket-Air" />
               <div className="contentBx">
-                <h2 className="contentBx-heading">
-                  Rocket-Air(Moz Addon)
-                </h2>
+                <h2 className="contentBx-heading">Rocket-Air(Moz Addon)</h2>
                 <p className="contentBx-description">
-                  Addon for Mozilla browser which can open multiple webpages. 
+                  Addon for Mozilla browser which can open multiple webpages.
                 </p>
                 <button className="view-btn btn btn-block btn-outline-light">
                   View
