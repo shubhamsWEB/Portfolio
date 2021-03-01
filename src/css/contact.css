@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira&display=swap');
+
+.contact-section {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.form-group input:focus,
+.form-group textarea:focus {
+    border: none;
+    color: #676F77;
+    background: #121212;
+}
+
+.form-group input,
+.form-group textarea {
+    border: none;
+    color: #121212;
+    background: #121212;
+    font-size: 2.2rem;
+    font-family: 'Saira', sans-serif;
+}
+.form-steps {
+    color: #676F77;
+    font-size: 2rem;
+    position: absolute;
+    bottom: 5%;
+    left:10%;
+}
+.form-group label {
+    font-family: 'Saira', sans-serif;
+
+}
+.heading-1-contact {
+    font-family: '28days';
+}
+@media only screen and (max-width: 430px) {
+    .form-group input,
+.form-group textarea {
+    font-size: 2rem;
+}
+.contact-p {
+    font-size: 2.2rem !important;
+}
+.send-btn {
+    font-size: 1.2rem !important;
+}
+.ctr-btn {
+    font-size: 1.2rem !important;
+}
+}
+.send-btn {
+    font-size: 1.5rem;
+    font-family: 'Saira', sans-serif;
+}
+.ctr-btn {
+    font-size: 1.5rem;
+    font-family: 'Saira', sans-serif;
+
+}
+.contact-p {
+    font-size: 3.5rem;
+    font-family: '28days';
+}
+.contact-p span {
+    background: rgba(68, 140, 235, 0.6);
+}

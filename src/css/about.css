@@ -1,0 +1,336 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap");
+.about {
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.about-section {
+  min-height: 200vh;
+  box-sizing: border-box;
+}
+.about-section section {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -100;
+  height: 100%;
+  pointer-events: none;
+  box-sizing: border-box;
+}
+.about-section section .side {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  background: url(../images/me.png);
+  background-size: cover;
+  filter: drop-shadow(20px 10px 4px ivory);
+}
+.about-section section .side#side1 {
+  clip-path: polygon(1% 0%, 52% 0%, 53% 49%, 53% 100%, 1% 100%);
+}
+.about-section section .side#side2 {
+  clip-path: polygon(100% 0, 52% 0%, 53% 49%, 53% 100%, 100% 100%);
+}
+.about-section .contentBx1 {
+  color: #fff;
+  padding: 5%;
+  padding-top: 130vh;
+}
+.about-section .contentBx1 h2 {
+  position: relative;
+  font-size: 4em;
+}
+.about-section .contentBx1 p {
+  position: relative;
+  font-size: 1.2em;
+}
+@media only screen and (max-width: 430px) {
+  .about-section section .side {
+    background: url(../images/footer-rock.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    bottom: 0;
+    filter: drop-shadow(1px 1px 1px #000);
+  }
+
+  .heading-1 span {
+    margin-top: 0;
+    font-size: 1rem;
+  }
+}
+.my-role {
+  font-family: "28days";
+}
+.my-description {
+  font-family: "Inconsolata", monospace;
+}
+/* PROGRESS BAR*/
+.skills li {
+  width: 50%;
+  float: left;
+  list-style-type: none;
+
+  padding-right: 5.3333333%;
+}
+
+.skills li:nth-child(even) {
+  margin-bottom: 5em;
+}
+
+.skills h2 {
+  margin: 0 0 1.5em;
+  border-bottom: 1px solid #ccc;
+  padding: 0 0 0.25em;
+}
+
+/* Styling an indeterminate progress bar */
+
+progress:not(value) {
+  /* Add your styles here. As part of this walkthrough we will focus only on determinate progress bars. */
+}
+
+/* Styling the determinate progress element */
+
+progress[value] {
+  /* Get rid of the default appearance */
+  appearance: none;
+
+  /* This unfortunately leaves a trail of border behind in Firefox and Opera. We can remove that by setting the border to none. */
+  border: none;
+
+  /* Add dimensions */
+  width: 100%;
+  height: 20px;
+
+  /* Although firefox doesn't provide any additional pseudo class to style the progress element container, any style applied here works on the container. */
+  background-color: whiteSmoke;
+  border-radius: 3px;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5) inset;
+
+  /* Of all IE, only IE10 supports progress element that too partially. It only allows to change the background-color of the progress value using the 'color' attribute. */
+  color: royalblue;
+
+  position: relative;
+  margin: 0 0 1.5em;
+}
+
+/*
+Webkit browsers provide two pseudo classes that can be use to style HTML5 progress element.
+-webkit-progress-bar -> To style the progress element container
+-webkit-progress-value -> To style the progress element value.
+*/
+
+progress[value]::-webkit-progress-bar {
+  background-color: whiteSmoke;
+  border-radius: 3px;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5) inset;
+}
+
+progress[value]::-webkit-progress-value {
+  position: relative;
+
+  background-size: 35px 20px, 100% 100%, 100% 100%;
+  border-radius: 3px;
+
+  /* Let's animate this */
+  animation: animate-stripes 5s linear infinite;
+}
+
+@keyframes animate-stripes {
+  100% {
+    background-position: -100px 0;
+  }
+}
+
+/* Let's spice up things little bit by using pseudo elements. */
+
+progress[value]::-webkit-progress-value:after {
+  /* Only webkit/blink browsers understand pseudo elements on pseudo classes. A rare phenomenon! */
+  content: "";
+  position: absolute;
+
+  width: 5px;
+  height: 5px;
+  top: 7px;
+  right: 7px;
+
+  background-color: white;
+  border-radius: 100%;
+}
+
+/* Firefox provides a single pseudo class to style the progress element value and not for container. -moz-progress-bar */
+
+progress[value]::-moz-progress-bar {
+  /* Gradient background with Stripes */
+  background-image: -moz-linear-gradient(
+      135deg,
+      transparent,
+      transparent 33%,
+      rgba(0, 0, 0, 0.1) 33%,
+      rgba(0, 0, 0, 0.1) 66%,
+      transparent 66%
+    ),
+    -moz-linear-gradient(top, rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.2)),
+    -moz-linear-gradient(left, rgb(204, 0, 112), #f44);
+
+  background-size: 35px 20px, 100% 100%, 100% 100%;
+  border-radius: 3px;
+
+  /* Firefox doesn't support CSS3 keyframe animations on progress element. Hence, we did not include animate-stripes in this code block */
+}
+
+/* Fallback technique styles */
+.progress-bar {
+  background-color: whiteSmoke;
+  border-radius: 3px;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5) inset;
+
+  /* Dimensions should be similar to the parent progress element. */
+  width: 100%;
+  height: 20px;
+}
+.skills-bar {
+  background-color: #121212 !important;
+}
+.progress-bar span {
+  background-color: rgb(165, 11, 152);
+  border-radius: 3px;
+
+  display: block;
+  text-indent: -9999px;
+}
+
+.skills li p[data-value] {
+  position: relative;
+}
+
+/* The percentage will automatically fall in place as soon as we make the width fluid. Now making widths fluid. */
+
+/* .skills li p[data-value]:after {
+  content: attr(data-value) "%";
+  position: absolute;
+  right: 0;
+} */
+
+
+.skills-bar::-webkit-progress-value {
+  /* Gradient background with Stripes */
+  background-image: -webkit-linear-gradient(
+      135deg,
+      transparent,
+      transparent 33%,
+      rgba(0, 0, 0, 0.1) 33%,
+      rgba(0, 0, 0, 0.1) 66%,
+      transparent 66%
+    ),
+    -webkit-linear-gradient(top, rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.2)),
+    -webkit-linear-gradient(left, rgb(46, 46, 46), rgb(40, 44, 32));
+}
+
+/* Similarly, for Mozillaa. Unfortunately combining the styles for different browsers will break every other browser. Hence, we need a separate block. */
+
+.html5::-moz-progress-bar,
+.php::-moz-progress-bar {
+  /* Gradient background with Stripes */
+  background-image: -moz-linear-gradient(
+      135deg,
+      transparent,
+      transparent 33%,
+      rgba(0, 0, 0, 0.1) 33%,
+      rgba(0, 0, 0, 0.1) 66%,
+      transparent 66%
+    ),
+    -webkit-linear-gradient(top, rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.2)),
+    -webkit-linear-gradient(left, rgb(46, 46, 46), rgb(40, 44, 32));
+}
+.skills p {
+  font-family: "Inconsolata", monospace;
+}
+  .chevron {
+    position: absolute;
+    width: 28px;
+    height: 8px;
+    opacity: 0;
+    left: 50%;
+    top: 70%;
+    transform: scale3d(0.5, 0.5, 0.5);
+    animation: move 3s ease-out infinite;
+  }
+  
+  .chevron:first-child {
+    animation: move 3s ease-out 1s infinite;
+  }
+  
+  .chevron:nth-child(2) {
+    animation: move 3s ease-out 2s infinite;
+  }
+  
+  .chevron:before,
+  .chevron:after {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 51%;
+    background: #fff;
+  }
+  
+  .chevron:before {
+    left: 0;
+    transform: skew(0deg, 30deg);
+  }
+  
+  .chevron:after {
+    right: 0;
+    width: 50%;
+    transform: skew(0deg, -30deg);
+  }
+  
+  @keyframes move {
+    25% {
+      opacity: 1;
+  
+    }
+    33% {
+      opacity: 1;
+      transform: translateY(30px);
+    }
+    67% {
+      opacity: 1;
+      transform: translateY(40px);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
+    }
+  }
+  
+  .text {
+    display: block;
+    margin-top: 75px;
+    margin-left: -30px;
+    font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
+    font-size: 12px;
+    color: #fff;
+    text-transform: uppercase;
+    white-space: nowrap;
+    opacity: .25;
+    animation: pulse 2s linear alternate infinite;
+  }
+  
+  @keyframes pulse {
+    to {
+      opacity: 1;
+    }
+  }
+/* Now we are good to duplicate html code for other skills and then add the css code for the new skill based on data-skill */
+
+/* THE END */
