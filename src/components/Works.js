@@ -10,6 +10,8 @@ import walletImg from "../images/Ewallet.png";
 import inventoryImg from "../images/Inventory.png";
 import copicoImg from "../images/copico.png";
 import rocketairImg from "../images/Rocket-Air.png"
+import crickboard from '../images/crickboard.png';
+import blackImg from '../images/npm.jpeg'
 import * as VanillaTilt from "vanilla-tilt";
 import cursorDot from "cursor-dot";
 
@@ -37,7 +39,41 @@ class Works extends React.Component {
         <br />
         <h1 className="heading-1 text-center mt-md-2 mb-md-3 mt-sm-1">My Projects</h1>
         <div className="container mb-5">
+        <div class="card-deck">
+            <div class="card">
+              <img src={blackImg} class="card-img-top" style={{height:'250px'}} alt="Samvid 2019" />
+              {/* <center><h1>OPEN SOURCE PROJECTS</h1></center> */}
+              <div className="contentBx">
+                <h2 className="contentBx-heading">OPEN SOURCE PROJECTS</h2>
+                <h4 className="contentBx-description">
+                I have made React packages and also have contributed to <a href="https://github.com/anandgupta193/react-enterprise-starter-kit">React Started kit.</a>
+                </h4>
+                <a className="project-link" target="__blank" href="https://www.npmjs.com/settings/shubham_17/packages">
+                <button className="view-btn btn btn-block btn-outline-light">
+                  View
+                </button>
+                </a>
+              </div>
+            </div>
+          </div>
           <div class="card-deck">
+          <div class="card">
+              <img src={crickboard} class="card-img-top" alt="Crickboard" />
+              <div className="contentBx">
+                <h2 className="contentBx-heading">
+                  CrickBoard
+                </h2>
+                <p className="contentBx-description">
+                  An Online cricket score tracking app
+                  <br />
+                </p>
+                <a className="project-link" target="__blank" href="https://crickboard.herokuapp.com/">
+                <button className="view-btn btn btn-block btn-outline-light">
+                  View
+                </button>
+                </a>
+              </div>
+            </div>
             <div class="card">
               <img src={covidImg} class="card-img-top" alt="covid19" />
               <div className="contentBx">
@@ -50,6 +86,24 @@ class Works extends React.Component {
                   <br />
                 </p>
                 <a className="project-link" target="__blank" href="http://covid19.shubhamsweb.in">
+                <button className="view-btn btn btn-block btn-outline-light">
+                  View
+                </button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="card-deck">
+            <div class="card">
+              <img src={sudokuImg} class="card-img-top" alt="sudoku" />
+              <div className="contentBx">
+                <h2 className="contentBx-heading">Online Sudoku Game</h2>
+                <p className="contentBx-description">
+                  Online Sudoku in which the sudoku board is generated randomly
+                  with all the rules.
+                  <br />
+                </p>
+                <a className="project-link" target="__blank" href="http://sudoku.shubhamsweb.in">
                 <button className="view-btn btn btn-block btn-outline-light">
                   View
                 </button>
@@ -76,15 +130,14 @@ class Works extends React.Component {
           </div>
           <div class="card-deck">
             <div class="card">
-              <img src={sudokuImg} class="card-img-top" alt="sudoku" />
+              <img src={walletImg} class="card-img-top" alt="E-Wallet" />
               <div className="contentBx">
-                <h2 className="contentBx-heading">Online Sudoku Game</h2>
+                <h2 className="contentBx-heading">E-Wallet</h2>
                 <p className="contentBx-description">
-                  Online Sudoku in which the sudoku board is generated randomly
-                  with all the rules.
+                  Online Virtual money transfer system to send and recieve money. 
                   <br />
                 </p>
-                <a className="project-link" target="__blank" href="http://sudoku.shubhamsweb.in">
+                <a className="project-link" target="__blank" href="http://wallet.shubhamsweb.in">
                 <button className="view-btn btn btn-block btn-outline-light">
                   View
                 </button>
@@ -107,44 +160,6 @@ class Works extends React.Component {
                   <br />
                 </p>
                 <a className="project-link" target="__blank" href="http://inventory.shubhamsweb.in">
-                <button className="view-btn btn btn-block btn-outline-light">
-                  View
-                </button>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="card-deck">
-            <div class="card">
-              <img src={walletImg} class="card-img-top" alt="E-Wallet" />
-              <div className="contentBx">
-                <h2 className="contentBx-heading">E-Wallet</h2>
-                <p className="contentBx-description">
-                  Online Virtual money transfer system to send and recieve money. 
-                  <br />
-                </p>
-                <a className="project-link" target="__blank" href="http://wallet.shubhamsweb.in">
-                <button className="view-btn btn btn-block btn-outline-light">
-                  View
-                </button>
-                </a>
-              </div>
-            </div>
-            <div class="card">
-              <img
-                src={rkpImg}
-                class="card-img-top"
-                alt="Photography"
-              />
-              <div className="contentBx">
-                <h2 className="contentBx-heading">
-                  Photography Website
-                </h2>
-                <p className="contentBx-description">
-                  Website design for a photographer with photo gallery.
-                  <br />
-                </p>
-                <a className="project-link" target="__blank" href="http://rkp--photography.000webhostapp.com/">
                 <button className="view-btn btn btn-block btn-outline-light">
                   View
                 </button>

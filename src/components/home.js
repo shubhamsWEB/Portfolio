@@ -196,7 +196,7 @@ class Home extends React.Component {
                   FULL STACK WEB DEVELOPER
                 </h5>
               </div>
-              <div class="downloadcontainer">
+              {/* <div class="downloadcontainer">
                 <input id="funky" type="checkbox" />
                 <label htmlFor="funky">
                   <div class="downloadcontainer_button">
@@ -212,7 +212,7 @@ class Home extends React.Component {
                     </a>
                   </div>
                 </label>
-              </div>
+              </div> */}
             </div>
             <div className="dot"></div>
             {/* <button
@@ -231,17 +231,17 @@ class Home extends React.Component {
                 <img alt="facebook" className="ml-md-4 ml-2" src={fbicon} />
               </a>
             </div>
-            <div className="footer">
+            {/* <div className="footer">
               <div style={{ width: "100%" }} className="text-center footer">
                 Designed by &#9889; Shubham Agrawal &#9889;{" "}
               </div>
-            </div>
+            </div> */}
             <button
               className="trap-button laptop-view"
               onClick={this.handleButtonClicked}
             >
               {gameOver && "Nice one"}
-              {cursorGrabbed && "I SAID DON'T"}
+              {cursorGrabbed && "Try Again..! :D"}
               {!gameOver && !cursorGrabbed && "DO NOT CLICK !"}
             </button>
             <div className="laptop-view grab-zone-wrapper">

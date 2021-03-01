@@ -120,7 +120,7 @@ class Contact extends React.Component {
         <br />
         <br />
         <br />
-        <div className="container contact-section">
+        {/* <div className="container">
           <h1 className="heading-1-contact">
             Interested in working together?‍
           </h1>
@@ -128,9 +128,9 @@ class Contact extends React.Component {
             Drop a mail at <span>shubhama664@gmail.com</span> and i will get
             back to you asap &#128151;
           </p>
-        </div>
+        </div> */}
 
-        {/* <form id="my_form" onSubmit={this.handleSubmit.bind(this)}>
+        <form id="my_form" onSubmit={this.handleSubmit.bind(this)} className="container contact-section">
           <Step1 
             currentStep={this.state.currentStep} 
             handleChange={this.handleChange}
@@ -148,78 +148,78 @@ class Contact extends React.Component {
           />
           {this.previousButton()}
           {this.nextButton()}
-        </form> */}
-        {/* <p className="form-steps" style={{fontFamily: 'Saira'}}>{this.state.currentStep}/3</p>  */}
+        </form> 
+        <p className="form-steps" style={{fontFamily: 'Saira'}}>{this.state.currentStep}/3</p> 
       </React.Fragment>
     );
   }
 }
 
-// function Step1(props) {
-//   if (props.currentStep !== 1) {
-//     return null;
-//   }
-//   return (
-//     <div className="form-group animated zoomIn">
-//       <input
-//         className="form-control input-form"
-//         id="name"
-//         name="name"
-//         type="text"
-//         placeholder="Enter your Name"
-//         value={props.name}
-//         onChange={props.handleChange}
-//         required
-//       />
-//     </div>
-//   );
-// }
+function Step1(props) {
+  if (props.currentStep !== 1) {
+    return null;
+  }
+  return (
+    <div className="form-group animated zoomIn">
+      <input
+        className="form-control input-form"
+        id="name"
+        name="name"
+        type="text"
+        placeholder="Enter your Name"
+        value={props.name}
+        onChange={props.handleChange}
+        required
+      />
+    </div>
+  );
+}
 
-// function Step2(props) {
-//   if (props.currentStep !== 2) {
-//     return null;
-//   }
-//   return (
-//     <div className="form-group animated zoomIn">
-//       <label htmlFor="email">Email address</label>
-//       <input
-//         className="form-control input-form"
-//         id="email"
-//         name="email"
-//         type="text"
-//         placeholder="Enter email"
-//         value={props.email}
-//         onChange={props.handleChange}
-//         required
-//       />
-//     </div>
-//   );
-// }
+function Step2(props) {
+  if (props.currentStep !== 2) {
+    return null;
+  }
+  return (
+    <div className="form-group animated zoomIn">
+      <label htmlFor="email">Email address</label>
+      <input
+        className="form-control input-form"
+        id="email"
+        name="email"
+        type="text"
+        placeholder="Enter email"
+        value={props.email}
+        onChange={props.handleChange}
+        required
+      />
+    </div>
+  );
+}
 
-// function Step3(props) {
-//   if (props.currentStep !== 3) {
-//     return null;
-//   }
-//   return (
-//     <React.Fragment>
-//       <div className="form-group animated zoomIn">
-//         <label htmlFor="message">Message</label>
-//         <textarea
-//           className="form-control input-form"
-//           id="message"
-//           name="message"
-//           type="text"
-//           placeholder="Your message"
-//           value={props.message}
-//           onChange={props.handleChange}
-//           required
-//         />
-//       </div>
-//       <button id="mybtn" className="btn send-btn btn-success float-right">
-//         Send Message
-//       </button>
-//       <span id="status"></span>
-//     </React.Fragment>
-//   );
-// }
+function Step3(props) {
+  if (props.currentStep !== 3) {
+    return null;
+  }
+  return (
+    <React.Fragment>
+      <div className="form-group animated zoomIn">
+        <label htmlFor="message">Message</label>
+        <textarea
+          className="form-control input-form"
+          id="message"
+          name="message"
+          type="text"
+          placeholder="Your message"
+          value={props.message}
+          onChange={props.handleChange}
+          required
+        />
+      </div>
+      <button id="mybtn" className="btn send-btn btn-success float-right">
+        Send Message
+      </button>
+      <span id="status"></span>
+    </React.Fragment>
+  );
+}
 export default Contact;

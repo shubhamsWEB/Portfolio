@@ -171,7 +171,9 @@ class Header extends React.Component {
         </nav>
         <div className="logo float-left mt-3 ml-sm-2 ml-md-5">
           <span>
-          <img className="logo-img" src={logo}/>
+          <h4>
+            <strong>शुभम्‌ अग्रवाल</strong>
+          </h4>
           </span>
         </div>
         <div className="hamb float-right">

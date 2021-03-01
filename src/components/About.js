@@ -33,7 +33,7 @@ class About extends React.Component {
         <br />
         <br />
         <div className="about-section">
-          <div style={{zIndex: '9999999'}} className="heading-1 text-center laptop-view animated bounceInUp">UI/UX DESIGNER / FREELANCER <br /> FULL STACK DEVELOPER</div>
+          <div style={{zIndex: '9999999'}} className="heading-1 text-center laptop-view animated bounceInUp">OPEN SOURCE CONTRIBUTOR/ <br /> FULL STACK DEVELOPER</div>
           <div className="container">
           <div class="chevron"></div>
   <div class="chevron"></div>
@@ -56,14 +56,9 @@ class About extends React.Component {
               I’m passionate, expressive, multi-talented spirit with a natural
               ability to entertain and inspire. I’m never satisfied to just come
               up with ideas. Instead I have an almost impulsive need to act on
-              them. My abundant energy fuels me in the pursuit of many
-              interests, hobbies, areas of study and artistic endeavors. I’m a
-              fast learner, able to pick up new skills and juggle different
-              projects and roles with relative ease. I like to develop expertise
-              in a number of areas over the course of my life and career. I’m a
-              people-person with deep emotions and empathy, a natural
-              storyteller. I’m able to inspire and am at my best when I’m
-              sharing my creative expressions with others. I'm currently working as an Software Engineer at GeekyAnts India Pvt. Ltd.
+              them. I like to develop expertise
+              in a number of areas over the course of my life and career. I’m able to inspire and am at my best when I’m
+              sharing my creative expressions with others. Currently working as an Software Engineer at GeekyAnts India Pvt. Ltd.
             </p>
           </div>
           <h2 className="heading-1 text-center mt-3 mb-3">Skills</h2>
@@ -72,6 +67,22 @@ class About extends React.Component {
 
                 <p style={{ width: "85%" }} data-value="85">
                   REACT JS
+                </p>
+                <progress max="100" value="85" class="skills-bar">
+                  <div class="progress-bar">
+                    <span style={{ width: "85%" }}>85%</span>
+                  </div>
+                </progress>
+                <p style={{ width: "85%" }} data-value="85">
+                  REACT NATIVE
+                </p>
+                <progress max="100" value="85" class="skills-bar">
+                  <div class="progress-bar">
+                    <span style={{ width: "85%" }}>85%</span>
+                  </div>
+                </progress>
+                <p style={{ width: "85%" }} data-value="85">
+                  WEBPACK
                 </p>
                 <progress max="100" value="85" class="skills-bar">
                   <div class="progress-bar">
@@ -120,6 +131,22 @@ class About extends React.Component {
               <li>
                 <p style={{ width: "80%" }} data-value="80">
                   JavaScript
+                </p>
+                <progress max="100" value="80" class="skills-bar">
+                  <div class="progress-bar">
+                    <span style={{ width: "80%" }}>80%</span>
+                  </div>
+                </progress>
+                <p style={{ width: "80%" }} data-value="80">
+                  MONGO DB
+                </p>
+                <progress max="100" value="80" class="skills-bar">
+                  <div class="progress-bar">
+                    <span style={{ width: "80%" }}>80%</span>
+                  </div>
+                </progress>
+                <p style={{ width: "80%" }} data-value="80">
+                  FIREBASE
                 </p>
                 <progress max="100" value="80" class="skills-bar">
                   <div class="progress-bar">
