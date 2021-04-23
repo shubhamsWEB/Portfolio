@@ -1,5 +1,5 @@
 import React from "react";
-import { Router, Route, Switch } from "react-router-dom";
+import { HashRouter, Route, Switch } from "react-router-dom";
 import history from "../history";
 import Home from "./home";
 import Works from "./Works";
@@ -9,8 +9,7 @@ import Header from "./header";
 class App extends React.Component {
   render() {
     return (
-      <div>
-        <Router history={history}>
+        <HashRouter>
           <div>
             <Header />
             <Switch>
@@ -20,8 +19,7 @@ class App extends React.Component {
               <Route path="/Contact" exact component={Contact} />
             </Switch>
           </div>
-        </Router>
-      </div>
+        </HashRouter>
     );
   }
 }
